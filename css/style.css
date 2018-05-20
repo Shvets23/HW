@@ -281,6 +281,40 @@ blockquote div {
 	text-transform: uppercase;
 }
 /* ===== About studio end ===== */
+/* ===== Services start ===== */
+.services-tab ul li.ui-state-active a, .services-tab ul li.ui-state-active a span {
+	color: black !important;
+}
+#tabs li a {
+	font-size: 14px;
+	color: grey;
+	text-transform: uppercase;
+	font-family: 'dosisregular';
+	letter-spacing: 0.4em;
+}
+#tabs li a span {
+	font-size: 48px;
+	letter-spacing: 0.5em;
+	padding-bottom: 30px;
+	color: gray;
+}
+.services-tab ul {
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+.services-tab ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.services-tab ul li span {
+	display: block;
+}
+.services-tab ul li a span:last-child {
+	margin-top: 30px;
+}
+/* ===== Services end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper .default-text {
 	margin-bottom: 40px;
@@ -320,6 +354,7 @@ blockquote div {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #111111;
+	font-weight: normal;
 }
 /* ===== Why choose us end ===== */
 
