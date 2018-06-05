@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/et-line.css">
   <!-- slicknav style-->
   <link rel="stylesheet" href="css/slicknav.css">
+  <!-- Animate css -->
+  <link rel="stylesheet" href="css/animate.css">
   <!-- Custom style -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -50,14 +52,21 @@
   </div>
   <!-- Header -->
   <div id="main">
-    <div class="inner">
+    <div class="inner animate-opasity">
       <div class="inner-content">
         <div class="inner-title"><h1>Tomas Rythm</h1></div>
         <span class="subtitle">Extraordinary art director & creative minimalism lover</span>
       </div>
+      <div class="rhomb-icon-inner">
+      <div class="rhomb-icon white-icon" data-scroll=".about-studio">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        </div>
       <!-- /.inner-content -->
     </div>
     <!-- /.inner -->
+    <div class="button-back" data-scroll=".inner"><i class="fas fa-arrow-up"></i></div>
+    <!-- /.button-back -->
     <div class="default-section about-studio">
       <div class="container">
         <h3 class="title">About studio</h3>
@@ -87,7 +96,35 @@
           <div class="col col-4 col-s-12">
             <div class="team-item">
               <div class="team-item-photo">
-                <img src="img/team-img-0.jpg" alt="">
+                <div class="team-item-front container-for-flip"> 
+                  <img src="img/team-img-0.jpg" alt="">
+                </div>
+                <!-- /.team-item-front -->
+               <div class="team-item-skills container-for-flip">
+                  <h3 class="title title-white title-light">Skills</h3>
+                 <span>Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</span>
+                 <Div class="progress-name">Branding</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 70%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+                 <Div class="progress-name">Design</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 85%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+                 <Div class="progress-name">Development</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 80%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+                 <Div class="progress-name">Photography</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 75%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+               </div>
+               <!-- /.team-item-skills -->
               </div>
               <!-- /.team-item-photo -->
               <div class="team-item-info text-center">
@@ -102,7 +139,35 @@
           <div class="col col-4 col-s-12">
             <div class="team-item">
               <div class="team-item-photo">
+                  <div class="team-item-front container-for-flip">
                 <img src="img/team-img-1.jpg" alt="">
+                </div>
+                <!-- /.team-item-front -->
+               <div class="team-item-skills container-for-flip">
+                  <h3 class="title title-white title-light">Skills</h3>
+                 <span>Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</span>
+                 <Div class="progress-name">Branding</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 70%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+                 <Div class="progress-name">Design</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 85%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+                 <Div class="progress-name">Development</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 80%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+                 <Div class="progress-name">Photography</Div>
+                 <div class="progress-bar">
+                   <div class="progress" style="width: 75%"></div>
+                 </div>
+                 <!-- /.progres-bar -->
+               </div>
+               <!-- /.team-item-skills -->
               </div>
               <!-- /.team-item-photo -->
               <div class="team-item-info text-center">
@@ -117,7 +182,34 @@
           <div class="col col-4 col-s-12">
             <div class="team-item">
               <div class="team-item-photo">
+                  <div class="team-item-front container-for-flip">
                 <img src="img/team-img-2.jpg" alt="">
+                </div>
+                <div class="team-item-skills container-for-flip">
+                    <h3 class="title title-white title-light">Skills</h3>
+                   <span>Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</span>
+                   <Div class="progress-name">Branding</Div>
+                   <div class="progress-bar">
+                     <div class="progress" style="width: 70%"></div>
+                   </div>
+                   <!-- /.progres-bar -->
+                   <Div class="progress-name">Design</Div>
+                   <div class="progress-bar">
+                     <div class="progress" style="width: 85%"></div>
+                   </div>
+                   <!-- /.progres-bar -->
+                   <Div class="progress-name">Development</Div>
+                   <div class="progress-bar">
+                     <div class="progress" style="width: 80%"></div>
+                   </div>
+                   <!-- /.progres-bar -->
+                   <Div class="progress-name">Photography</Div>
+                   <div class="progress-bar">
+                     <div class="progress" style="width: 75%"></div>
+                   </div>
+                   <!-- /.progres-bar -->
+                 </div>
+                 <!-- /.team-item-skills -->
               </div>
               <!-- /.team-item-photo -->
               <div class="team-item-info text-center">
@@ -794,6 +886,8 @@
   <script src="js/jquery.slicknav.min.js"></script>
   <!-- Header on scrol -->
   <script src="js/header-on-scroll.js"></script>
+  <!-- wow animate -->
+  <script src="js/wow.min.js"></script>
   <!-- Init plugins -->
   <script src="js/init.js"></script>
 </body>

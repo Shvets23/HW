@@ -102,6 +102,15 @@ button {
     padding-right: 15px;
     padding-top: 159px;*/
 }
+.fas.fa-chevron-down {
+	font-size: 15px;
+	color: #222;
+	
+}
+.rhomb-icon-inner {
+	position: relative;
+    bottom: 50px;
+}
 .inner-content {
 	vertical-align: middle;
 	display: inline-block;
@@ -398,6 +407,7 @@ button {
 	padding: 15px 40px;
 	text-transform: uppercase;
 	letter-spacing: .2em;
+	border: 1px solid transparent;
 }
 .btn-default {
 	padding: 12px 20px;
@@ -406,11 +416,17 @@ button {
 	color: #ffffff;
 
 }
+.btn-large:hover {
+background-color: #000;
+color: white;
+border: 1px solid white;
+}
 .btn-large {
 	padding: 15px 40px;
 	font-size: 14px;
 	background-color: #cfcfcf;
 	color: #111111;
+	transition: all .2s ease-in
 }
 .btn-small {
 	padding: 10px 15px;
@@ -471,6 +487,25 @@ textarea.form-control {
 }
 /* Default component end */
 /* Custom style start */
+/* button-back start */
+.fas.fa-arrow-up {
+	text-align: center;
+	color:  rgba(255, 255, 255, .75);
+	font-size: 45px;
+}
+.button-back {
+	background-color: #363636;
+	position: fixed;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	bottom:30px;
+	right: 30px;
+	z-index: 999;
+	padding-top: 2px;
+	text-align: center;
+}
+/* button-back end */
 /* ===== About studio start ===== */
 blockquote {
 	color: #777777;
@@ -490,6 +525,38 @@ blockquote div {
 .about-studio .row + .row {
 	margin-top: 100px;
 }
+.team-item-photo {
+	height: 438px;
+	position: relative;
+	perspective: 2000px;
+}
+.team-item-skills {
+	background-color: #000;
+	transform: rotateY(180deg);
+	padding: 40px;
+}
+.team-item-photo:hover .team-item-front {
+	transform: rotateY(180deg);
+}
+.team-item-photo:hover .team-item-skills {
+	transform: rotateY(360deg);
+}
+
+.team-item-skills span {
+	font-family: 'open_sansregular';
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, .5);
+}
+.container-for-flip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	backface-visibility: hidden;
+	transition: all .8s ease;
+}
 .team-item-info span{
 	display: block;
 }
@@ -508,6 +575,29 @@ blockquote div {
 	color: #777777;
 	letter-spacing: .4em;
 	text-transform: uppercase;
+}
+.progress-bar {
+	
+	height: 12px;
+	width: 100%;
+	position: relative;
+	background-color: #363636;
+	
+}
+.progress-name {
+	font-family: 'open_sansregular';
+	font-size: 11px;
+	letter-spacing: .2em;
+	line-height: 38px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, .9);
+}
+.progress-bar .progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .75);
 }
 @media (max-width: 767px) {
 	.team-item-photo {

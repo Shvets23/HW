@@ -43,3 +43,4 @@ function onClick(e) {
 }
 
 scrollBtn.on('click', onClick); // отслеживаем событие клик на все элементы с атрр data-scroll
+
